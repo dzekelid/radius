@@ -3,9 +3,9 @@ swagger: "2.0"
 x-collection-name: Dezrez
 x-complete: 0
 info:
-  title: Dezrez Get historical prices within a radius of a location
+  title: Dezrez Search for POI's in a radius from a point
   version: 1.0.0
-  description: Get historical prices within a radius of a location.
+  description: Search for poi's in a radius from a point.
 host: api.dezrez.com
 basePath: /
 schemes:
@@ -61,6 +61,29 @@ paths:
       - Radius
       - Of
       - Location
+  /api/poi/search/radius:
+    post:
+      summary: Search for POI's in a radius from a point
+      description: Search for poi's in a radius from a point.
+      operationId: Poi_GeoRadiusSearchByquery
+      x-api-path-slug: apipoisearchradius-post
+      parameters:
+      - in: body
+        name: query
+        schema:
+          $ref: '#/definitions/holder'
+      - in: header
+        name: Rezi-Api-Version
+        description: Specifies which version of the API to call
+      responses:
+        200:
+          description: OK
+      tags:
+      - SearchPOIs
+      - In
+      - Radius
+      - From
+      - Point
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

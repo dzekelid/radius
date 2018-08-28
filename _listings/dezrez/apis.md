@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28888-www-
 x-kinRank: "7"
 x-alexaRank: "385559"
 tags: Radius
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/radius/master/_listings/dezrez/apis.md
 specificationVersion: "0.14"
 apis:
@@ -24,6 +24,16 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/radius/master/_listings/dezrez/apipropertyhistoricalpricesradius-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/radius/master/_listings/dezrez/apipropertyhistoricalpricesradius-get-openapi.md
+- name: Dezrez.Rezi.Client.Api - Search for POI's in a radius from a point
+  x-api-slug: apipoisearchradius-post
+  description: Search for poi's in a radius from a point.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28888-www-dezrez-com.jpg
+  humanURL: https://www.dezrez.com
+  baseURL: https://api.dezrez.com//
+  tags: SaaS, Technology, Real Estate, Properties, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/radius/master/_listings/dezrez/apipoisearchradius-post-openapi.md
 x-common:
 - type: x-github
   url: https://github.com/dezrez
